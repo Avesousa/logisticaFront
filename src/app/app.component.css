@@ -1,0 +1,13 @@
+.cabecera{
+    background-color: rgba(82, 80, 80, 0.9);
+    padding: 15px;
+    color: antiquewhite;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.btn-secondary{
+    margin-left:10px;
+}

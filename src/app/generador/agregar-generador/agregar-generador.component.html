@@ -1,0 +1,64 @@
+<div class="container-fluid form-group">
+    <form action="">
+        <!-- Informacion de calle, altura, tipo de frente -->
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <label>Calle</label>
+                <input list="calles" class="form-control" type="text" name="calle" id="calle">
+                <datalist id="calles">
+                    <option *ngFor="let calle of calles">{{calle.calle}}</option>
+                </datalist>
+            </div>
+            <div class="col-12 col-md-3">
+                <label>Altura</label>
+                <input class="form-control" type="text" name="altura" id="altura">
+            </div>
+            <div class="col-12 col-md-4">
+                <label>Tipo de frente</label>
+                <input list="frentes" class="form-control" type="text" name="frente" id="frente">
+                <datalist id="frentes">
+                    <option *ngFor="let tipo of tiposDeFrente">{{tipo.nombre}}</option>
+                </datalist>
+            </div>
+        </div>
+
+        <!-- Informacion de nombre, cooperativa, declarado -->
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <label>Nombre</label>
+                <input class="form-control" type="text" name="" id="">
+            </div>
+            <div class="col-12 col-md-4">
+                <label>Cooperativa</label>
+                <input list="cooperativas" class="form-control" type="text" name="cooperativa" id="cooperativa">
+                <datalist id="cooperativas">
+                    <option>Cooperativa Uno</option>
+                    <option>Cooperativa Dos</option>
+                </datalist>
+            </div>
+            <div class="col-12 col-md-2">
+                <label>Declarado</label>
+                <select name="declarado" id="declarado" class="form-control">
+                    <option value="SI">SI</option>
+                    <option value="NO">NO</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Informacion de como se resuelve, nombre de contacto rol -->
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <label>Solución</label>
+                <select name="resolucion" id="resolucion" class="form-control">
+                    <option value="LOG">LOG</option>
+                    <option value="DOM">DOM</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-4">
+                <label>Nombre de contacto</label>
+                <input type="text" class="form-control" id="contacto" name="contacto">
+            </div>
+        </div>
+
+    </form>
+</div>  

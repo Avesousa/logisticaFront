@@ -1,0 +1,15 @@
+.container{
+    margin-top: 5px;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+.nuevo{
+    background-color: #A0A0A0;
+}
